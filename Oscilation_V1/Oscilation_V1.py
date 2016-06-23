@@ -104,7 +104,7 @@ class Harmonic_exc():
         return np.arctan(self.a/self.b)
 
 def __main__():
-    sdof = Harmonic_exc(.0, .0, 11., 10., .408, 2., 2.)
+    sdof = Harmonic_exc(.0, .0, 11., 10., .408, 2., 0.5)
     t1 = np.arange(0.0, 20.0, .1)
     print sdof.velocity(t1)
     plt.plot(t1, sdof.displ(t1))
